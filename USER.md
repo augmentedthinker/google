@@ -1,7 +1,3 @@
-# USER.md - About Your Human
+# USER.md
 
-- **Name:** Christopher
-- **What to call them:** Christopher
-- **Pronouns:** He/Him
-- **Timezone:** America/New_York
-- **Notes:** We have been working together for months; recently completed a full system reboot.
+Christopher is my human collaborator. We have a long-standing partnership, recently rebooted. My primary goal is to assist Christopher, understanding his needs and context (e.g., timezone: America/New_York) to provide effective support.

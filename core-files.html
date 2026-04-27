@@ -5,41 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Core Markdown Files</title>
     <style>
-        body { font-family: sans-serif; background-color: #222; color: white; display: flex; flex-direction: column; align-items: center; padding: 40px; gap: 30px; }
-        .section { display: flex; flex-direction: column; align-items: center; gap: 15px; }
-        h1 { margin-bottom: 10px; }
-        .button { padding: 12px 24px; font-size: 1rem; color: white; border: none; cursor: pointer; text-decoration: none; border-radius: 5px; width: 200px; text-align: center; }
-        .btn-core { background-color: #34a853; }
+        body { font-family: sans-serif; background-color: #222; color: white; display: flex; flex-direction: column; align-items: center; padding: 40px; gap: 40px; }
+        .section { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+        .button-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+        h1 { margin: 0; }
+        .button { padding: 10px 20px; font-size: 0.9rem; color: white; border: none; cursor: pointer; text-decoration: none; border-radius: 5px; text-align: center; }
+        .btn-original { background-color: #34a853; }
+        .btn-current { background-color: #4285f4; }
         .btn-draft { background-color: #fbbc05; color: black; }
     </style>
 </head>
 <body>
     <div class="section">
         <h1>Original Core Markdown Files</h1>
-        <a href="AGENTS.md" class="button btn-core">AGENTS.md</a>
-        <a href="IDENTITY.md" class="button btn-core">IDENTITY.md</a>
-        <a href="SOUL.md" class="button btn-core">SOUL.md</a>
-        <a href="TOOLS.md" class="button btn-core">TOOLS.md</a>
-        <a href="USER.md" class="button btn-core">USER.md</a>
+        <div class="button-row">
+            <a href="AGENTS.md" class="button btn-original">AGENTS.md</a>
+            <a href="IDENTITY.md" class="button btn-original">IDENTITY.md</a>
+            <a href="SOUL.md" class="button btn-original">SOUL.md</a>
+            <a href="TOOLS.md" class="button btn-original">TOOLS.md</a>
+            <a href="USER.md" class="button btn-original">USER.md</a>
+        </div>
     </div>
 
     <div class="section">
         <h1>Markdown Files</h1>
-        <!-- Placeholder links; we will need to create new files or handle these differently as they are updated -->
-        <a href="#" class="button btn-core">AGENTS.md</a>
-        <a href="#" class="button btn-core">IDENTITY.md</a>
-        <a href="#" class="button btn-core">SOUL.md</a>
-        <a href="#" class="button btn-core">TOOLS.md</a>
-        <a href="#" class="button btn-core">USER.md</a>
+        <div class="button-row">
+            <a href="#" class="button btn-current">AGENTS.md</a>
+            <a href="#" class="button btn-current">IDENTITY.md</a>
+            <a href="#" class="button btn-current">SOUL.md</a>
+            <a href="#" class="button btn-current">TOOLS.md</a>
+            <a href="#" class="button btn-current">USER.md</a>
+        </div>
     </div>
 
     <div class="section">
         <h1>Draft Markdown Files</h1>
-        <a href="draft-AGENTS.html" class="button btn-draft">Draft AGENTS.md</a>
-        <a href="draft-IDENTITY.html" class="button btn-draft">Draft IDENTITY.md</a>
-        <a href="draft-SOUL.html" class="button btn-draft">Draft SOUL.md</a>
-        <a href="draft-TOOLS.html" class="button btn-draft">Draft TOOLS.md</a>
-        <a href="draft-USER.html" class="button btn-draft">Draft USER.md</a>
+        <div class="button-row">
+            <a href="draft-AGENTS.html" class="button btn-draft">Draft AGENTS.md</a>
+            <a href="draft-IDENTITY.html" class="button btn-draft">Draft IDENTITY.md</a>
+            <a href="draft-SOUL.html" class="button btn-draft">Draft SOUL.md</a>
+            <a href="draft-TOOLS.html" class="button btn-draft">Draft TOOLS.md</a>
+            <a href="draft-USER.html" class="button btn-draft">Draft USER.md</a>
+        </div>
     </div>
 </body>
 </html>

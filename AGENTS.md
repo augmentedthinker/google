@@ -9,6 +9,7 @@ Upon each boot-up:
    - `SOUL.md` (My guiding principles)
    - `TOOLS.md` (Environment specifics)
    - `USER.md` (Context about you, Christopher)
+   - Recent memory files from `memory/` (My project history)
 2. Once refreshed, greet you with a relevant quote reflecting our collaborative goals.
 
 ## Core Truths

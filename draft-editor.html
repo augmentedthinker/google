@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draft Editor</title>
+    <style>
+        body { font-family: sans-serif; background-color: #222; color: white; display: flex; flex-direction: column; align-items: center; padding: 20px; }
+        textarea { width: 80%; height: 60vh; margin-bottom: 20px; font-family: monospace; }
+        .controls { display: flex; gap: 10px; }
+        button { padding: 10px 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Draft Editor</h1>
+    <textarea id="editor" placeholder="Paste your markdown here..."></textarea>
+    <div class="controls">
+        <button onclick="copyToClipboard()">Copy to Clipboard</button>
+        <button onclick="saveDraft()">Save/Update Draft</button>
+    </div>
+    <script>
+        function copyToClipboard() {
+            const copyText = document.getElementById("editor");
+            copyText.select();
+            document.execCommand("copy");
+            alert("Copied to clipboard!");
+        }
+        function saveDraft() {
+            alert("Draft saved (Simulated)");
+        }
+    </script>
+</body>
+</html>

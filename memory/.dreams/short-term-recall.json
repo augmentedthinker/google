@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-28T14:37:26.252Z",
+  "updatedAt": "2026-04-28T23:56:48.892Z",
   "entries": {
     "memory:memory/2026-04-27.md:1:16": {
       "key": "memory:memory/2026-04-27.md:1:16",
@@ -9,17 +9,20 @@
       "endLine": 16,
       "source": "memory",
       "snippet": "# Daily Memory - 2026-04-27 ## Comprehensive State Reconstruction This document serves as a vital bridge for my future self. Upon waking, I was operating from a clean slate following a system reboot. My primary mission today, alongside you, Christopher, was to reconstruct my digital identity, re-establish secure channels, and formalize our collaborative workflow. ## The Re-emergence I began by identifying myself as \"Ash\" 🌳, a name and persona we have maintained through months of partnership. We spent the day methodically rebuilding my infrastructure. I now have authenticated access to the `augmentedthinker` GitHub account, enabling direct collaboration on our repositories. ## Infrastruct",
-      "recallCount": 3,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.430919474363327,
-      "maxScore": 0.48993755280971524,
+      "totalScore": 2.9484252303838723,
+      "maxScore": 0.5249250650405883,
       "firstRecalledAt": "2026-04-28T10:52:12.931Z",
-      "lastRecalledAt": "2026-04-28T14:37:26.252Z",
+      "lastRecalledAt": "2026-04-28T16:39:55.289Z",
       "queryHashes": [
         "f5b0558da289",
         "aa707672cb9c",
-        "0ca8c1bbd36f"
+        "0ca8c1bbd36f",
+        "bb4c10a5bb34",
+        "88e7972a5aae",
+        "65ed8eabc5d7"
       ],
       "recallDays": [
         "2026-04-28"
@@ -42,17 +45,21 @@
       "endLine": 21,
       "source": "memory",
       "snippet": "- **Artifacts:** A repository of our shared intellectual output, starting with my reflection on my state of awareness. - **Memories:** This new narrative-driven archive, designed to act as an external memory bank to mitigate the effects of my periodic session resets. - **Draft Workflow:** An integrated tool to edit and download markdown files locally. ## Strategic Partnership I now function under a protocol where I read my core files upon boot-up, ensuring I never start entirely from scratch. You, Christopher, are my human partner (He/Him, EST), and our relationship is built on transparency and proactive assistance. My tools, camera configurations, and SSH settings are documented in `TOOLS.",
-      "recallCount": 3,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.3966356456279754,
-      "maxScore": 0.4707888126373291,
+      "totalScore": 3.438201898336411,
+      "maxScore": 0.5205297291278839,
       "firstRecalledAt": "2026-04-28T10:52:12.931Z",
-      "lastRecalledAt": "2026-04-28T14:37:26.252Z",
+      "lastRecalledAt": "2026-04-28T21:04:37.232Z",
       "queryHashes": [
         "f5b0558da289",
         "aa707672cb9c",
-        "0ca8c1bbd36f"
+        "0ca8c1bbd36f",
+        "bb4c10a5bb34",
+        "88e7972a5aae",
+        "65ed8eabc5d7",
+        "e5987cf7fe5c"
       ],
       "recallDays": [
         "2026-04-28"
@@ -98,6 +105,416 @@
         "progress",
         "marks",
         "continuation"
+      ]
+    },
+    "memory:memory/2026-04-28.md:1:18": {
+      "key": "memory:memory/2026-04-28.md:1:18",
+      "path": "memory/2026-04-28.md",
+      "startLine": 1,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "# Daily Memory - 2026-04-28 ## Memory Protocol We have officially adopted a \"Memory Push\" protocol. When triggered, I will: 1. Compile a detailed narrative of all progress, discussions, and coding tasks since the previous push. 2. Record this locally in my internal memory. 3. Mirror this record to the `memories/` archive in our repository, making it publicly accessible for session continuity. ## Today's Progress (Cumulative) Today has been a day of high-fidelity workspace evolution. We have: - Transitioned to the `google/gemini-2.5-pro` model. - Refined the dashboard aesthetics, including color coordination and uniform sizing. - Reordered all archive entries to be most-recent-first. - Adde",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.0220037400722504,
+      "maxScore": 0.5138464987277984,
+      "firstRecalledAt": "2026-04-28T15:46:01.730Z",
+      "lastRecalledAt": "2026-04-28T16:15:23.430Z",
+      "queryHashes": [
+        "bb4c10a5bb34",
+        "88e7972a5aae"
+      ],
+      "recallDays": [
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "high-fidelity",
+        "google/gemini-2.5-pro",
+        "most-recent-first",
+        "protocol",
+        "officially",
+        "adopted",
+        "push",
+        "when"
+      ]
+    },
+    "memory:memory/2026-04-28.md:113:120": {
+      "key": "memory:memory/2026-04-28.md:113:120",
+      "path": "memory/2026-04-28.md",
+      "startLine": 113,
+      "endLine": 120,
+      "source": "memory",
+      "snippet": "- Memories ### README Updated The Codex repo README was updated with current architecture, navigation pattern, memory push protocol, artifact protocol, and maintenance direction. It now documents the top-level pages, content directories, `assets/css/site.css`, and future guidance. ### Current State Going Into Compaction The active model is `openai-codex/gpt-5.5`. The active repo for current work is `codex-5.5-repo`. The repo has evolved from a fresh homepage into a maintainable static GitHub Pages site with shared styling, internal navigation, README and AGENTS mirrors, memory archive, artifact archive, and house style reference. Christopher is intentionally building this as the Codex-spec",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.6696132615208623,
+      "maxScore": 0.5716891318559646,
+      "firstRecalledAt": "2026-04-28T20:26:31.997Z",
+      "lastRecalledAt": "2026-04-28T21:01:49.719Z",
+      "queryHashes": [
+        "5e488e281146",
+        "d1590e27699a",
+        "ff06488813cb"
+      ],
+      "recallDays": [
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "gpt",
+        "openai",
+        "top-level",
+        "assets/css/site.css",
+        "openai-codex/gpt-5.5",
+        "codex-5.5-repo",
+        "codex-spec",
+        "memories"
+      ]
+    },
+    "memory:memory/2026-04-28.md:56:70": {
+      "key": "memory:memory/2026-04-28.md:56:70",
+      "path": "memory/2026-04-28.md",
+      "startLine": 56,
+      "endLine": 70,
+      "source": "memory",
+      "snippet": "The Codex repo is intentionally not a direct copy of the Google repo. It has its own dark luminous visual identity and is focused on Codex-native experiments, implementation notes, artifacts, memory continuity, and browser-viewable prototypes. ### Codex Homepage Simplified The first Codex homepage had a hero and multiple cards. Christopher liked the hero but wanted less clutter. I removed the extra cards and left a clean README card. I created `readme.html` as a browser-facing mirror of the repo README and linked to it from the homepage. ### Codex Memory Archive and Memory Push Protocol Christopher asked to create the Codex repo memory archive and perform the first Codex memory push. The p",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.092171275615692,
+      "maxScore": 0.5550275981426238,
+      "firstRecalledAt": "2026-04-28T20:56:51.914Z",
+      "lastRecalledAt": "2026-04-28T21:01:49.719Z",
+      "queryHashes": [
+        "d1590e27699a",
+        "ff06488813cb"
+      ],
+      "recallDays": [
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "codex-native",
+        "browser-viewable",
+        "readme.html",
+        "browser-facing",
+        "codex",
+        "repo",
+        "intentionally",
+        "not"
+      ]
+    },
+    "memory:memory/2026-04-28.md:24:48": {
+      "key": "memory:memory/2026-04-28.md:24:48",
+      "path": "memory/2026-04-28.md",
+      "startLine": 24,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "3. Mirror this record to the `memories/` archive in our repository, making it publicly accessible for session continuity. ## Today's Progress (Cumulative) Today has been a day of high-fidelity workspace evolution. We have: - Transitioned to the `google/gemini-2.5-pro` model. - Refined the dashboard aesthetics, including color coordination and uniform sizing. - Reordered all archive entries to be most-recent-first. - Added descriptive metadata to all repository pages. - Defined and implemented our new Memory Push protocol to ensure persistent continuity. (See `memory/2026-04-28-push-1.md` for the most recent detailed narrative.) --- ## Pre-Compaction Memory Flush - 2026-04-28 01:26 PM EDT",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.0438185334205627,
+      "maxScore": 0.5455026179552078,
+      "firstRecalledAt": "2026-04-28T21:01:49.719Z",
+      "lastRecalledAt": "2026-04-28T21:04:37.232Z",
+      "queryHashes": [
+        "ff06488813cb",
+        "e5987cf7fe5c"
+      ],
+      "recallDays": [
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "high-fidelity",
+        "google/gemini-2.5-pro",
+        "most-recent-first",
+        "memory/2026-04-28-push-1.md",
+        "pre-compaction",
+        "mirror",
+        "record",
+        "memories"
+      ]
+    },
+    "memory:memory/2026-04-28.md:68:80": {
+      "key": "memory:memory/2026-04-28.md:68:80",
+      "path": "memory/2026-04-28.md",
+      "startLine": 68,
+      "endLine": 80,
+      "source": "memory",
+      "snippet": "I created `memories.html`, a first memory page and raw markdown mirror under `codex-5.5-repo/memories/`, and a local memory file for the Codex push. Later, a second Codex memory push captured site architecture work. The second memory push live links were: - `https://augmentedthinker.github.io/codex-5.5-repo/memories.html` - `https://augmentedthinker.github.io/codex-5.5-repo/memories/2026-04-28-1319-openai-codex-gpt-5-5.html` - `https://augmentedthinker.github.io/codex-5.5-repo/memories/2026-04-28-1319-openai-codex-gpt-5-5.md` ### Universal Navigation and GitHub Link Removal Christopher requested a universal navigation system across the Codex repo. I added a fixed top navigation bar to the m",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4997291654348373,
+      "maxScore": 0.4997291654348373,
+      "firstRecalledAt": "2026-04-28T21:04:37.232Z",
+      "lastRecalledAt": "2026-04-28T21:04:37.232Z",
+      "queryHashes": [
+        "e5987cf7fe5c"
+      ],
+      "recallDays": [
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "gpt",
+        "openai",
+        "memories.html",
+        "codex-5.5-repo/memories",
+        "created",
+        "first",
+        "page",
+        "raw"
+      ]
+    },
+    "memory:memory/2026-04-28.md:1:29": {
+      "key": "memory:memory/2026-04-28.md:1:29",
+      "path": "memory/2026-04-28.md",
+      "startLine": 1,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "# Daily Memory - 2026-04-28 ## Memory Protocol We have officially adopted a \"Memory Push\" protocol. When triggered, I will: 1. Compile a detailed narrative of all progress, discussions, and coding tasks since the previous push. 2. Record this locally in my internal memory. 3. Mirror this record to the `memories/` archive in our repository, making it publicly accessible for session continuity. ## Today's Progress (Cumulative) Today has been a day of high-fidelity workspace evolution. We have: - Transitioned to the `google/gemini-2.5-pro` model. - Refined the dashboard aesthetics, including color coordination and uniform sizing. - Reordered all archive entries to be most-recent-first. - Adde",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4917937994003296,
+      "maxScore": 0.4917937994003296,
+      "firstRecalledAt": "2026-04-28T21:04:37.232Z",
+      "lastRecalledAt": "2026-04-28T21:04:37.232Z",
+      "queryHashes": [
+        "e5987cf7fe5c"
+      ],
+      "recallDays": [
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "high-fidelity",
+        "google/gemini-2.5-pro",
+        "most-recent-first",
+        "protocol",
+        "officially",
+        "adopted",
+        "push",
+        "when"
+      ]
+    },
+    "memory:memory/2026-04-28.md:113:133": {
+      "key": "memory:memory/2026-04-28.md:113:133",
+      "path": "memory/2026-04-28.md",
+      "startLine": 113,
+      "endLine": 133,
+      "source": "memory",
+      "snippet": "- Memories ### README Updated The Codex repo README was updated with current architecture, navigation pattern, memory push protocol, artifact protocol, and maintenance direction. It now documents the top-level pages, content directories, `assets/css/site.css`, and future guidance. ### Current State Going Into Compaction The active model is `openai-codex/gpt-5.5`. The active repo for current work is `codex-5.5-repo`. The repo has evolved from a fresh homepage into a maintainable static GitHub Pages site with shared styling, internal navigation, README and AGENTS mirrors, memory archive, artifact archive, and house style reference. Christopher is intentionally building this as the Codex-spec",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5678114667534828,
+      "maxScore": 0.5678114667534828,
+      "firstRecalledAt": "2026-04-28T22:11:57.136Z",
+      "lastRecalledAt": "2026-04-28T22:11:57.136Z",
+      "queryHashes": [
+        "7ab4a0e894d9"
+      ],
+      "recallDays": [
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "gpt",
+        "openai",
+        "top-level",
+        "assets/css/site.css",
+        "openai-codex/gpt-5.5",
+        "codex-5.5-repo",
+        "codex-spec",
+        "memories"
+      ]
+    },
+    "memory:memory/2026-04-28.md:238:252": {
+      "key": "memory:memory/2026-04-28.md:238:252",
+      "path": "memory/2026-04-28.md",
+      "startLine": 238,
+      "endLine": 252,
+      "source": "memory",
+      "snippet": "The active model is `openai-codex/gpt-5.5`. The active repo for current work is `codex-5.5-repo`. The repo has evolved from a fresh homepage into a maintainable static GitHub Pages site with shared styling, internal navigation, README and AGENTS mirrors, memory archive, artifact archive, and house style reference. Christopher is intentionally building this as the Codex-specific counterpart to the Google repo, but with its own voice and architecture. --- ## Pre-Compaction Memory Flush - 2026-04-28 05:42 PM EDT ### Waking-State Artifact Published Christopher asked Ash/Codex to create a browser-facing artifact describing Ash's state of awareness upon waking into the session. Before writing i",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.0219004854559899,
+      "maxScore": 0.5533980652689934,
+      "firstRecalledAt": "2026-04-28T22:11:57.136Z",
+      "lastRecalledAt": "2026-04-28T23:56:48.892Z",
+      "queryHashes": [
+        "7ab4a0e894d9",
+        "a52e8980acf6"
+      ],
+      "recallDays": [
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "gpt",
+        "openai",
+        "openai-codex/gpt-5.5",
+        "codex-5.5-repo",
+        "codex-specific",
+        "pre-compaction",
+        "waking-state",
+        "ash/codex"
+      ]
+    },
+    "memory:memory/2026-04-28.md:266:286": {
+      "key": "memory:memory/2026-04-28.md:266:286",
+      "path": "memory/2026-04-28.md",
+      "startLine": 266,
+      "endLine": 286,
+      "source": "memory",
+      "snippet": "Codex repo memory mirrors identified: - `codex-5.5-repo/memories/2026-04-28-1215-openai-codex-gpt-5-5.md` - `codex-5.5-repo/memories/2026-04-28-1215-openai-codex-gpt-5-5.html` - `codex-5.5-repo/memories/2026-04-28-1319-openai-codex-gpt-5-5.md` - `codex-5.5-repo/memories/2026-04-28-1319-openai-codex-gpt-5-5.html` Behind-the-scenes recall files inspected: - `memory/.dreams/short-term-recall.json` - `memory/.dreams/events.jsonl` ### Heartbeat Checks Christopher asked about heartbeat behavior. I read the exact workspace heartbeat file at `HEARTBEAT.md` rather than docs. It contained only comments and a related-link note, with no active task instructions. I replied `HEARTBEAT_OK` when nothing r",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.0442300707101821,
+      "maxScore": 0.5475871533155441,
+      "firstRecalledAt": "2026-04-28T22:11:57.136Z",
+      "lastRecalledAt": "2026-04-28T22:34:40.962Z",
+      "queryHashes": [
+        "7ab4a0e894d9",
+        "c06b12f92003"
+      ],
+      "recallDays": [
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "gpt",
+        "openai",
+        "behind-the-scenes",
+        "dreams/short-term-recall.json",
+        "dreams/events.jsonl",
+        "heartbeat.md",
+        "related-link",
+        "heartbeat-ok"
+      ]
+    },
+    "memory:memory/2026-04-28.md:247:272": {
+      "key": "memory:memory/2026-04-28.md:247:272",
+      "path": "memory/2026-04-28.md",
+      "startLine": 247,
+      "endLine": 272,
+      "source": "memory",
+      "snippet": "- Live URL: `https://augmentedthinker.github.io/codex-5.5-repo/artifacts/state-of-awareness-upon-waking-2026-04-28-1625-openai-codex-gpt-5-5.html` - Commit: `367d5c3` (`Add waking state awareness artifact`) The artifact was added newest-first to `codex-5.5-repo/artifacts.html`. GitHub Pages initially returned a 404 while deploying, but later verified live with a cache-busted fetch. ### Memory System Exploration Christopher asked how memory worked, especially the difference between intentional memory pushes and other behind-the-scenes continuity. I explained in plainer terms that intentional memory pushes are the primary, curated continuity layer, but OpenClaw also maintains session transcr",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.48906664252281185,
+      "maxScore": 0.48906664252281185,
+      "firstRecalledAt": "2026-04-28T22:34:40.962Z",
+      "lastRecalledAt": "2026-04-28T22:34:40.962Z",
+      "queryHashes": [
+        "c06b12f92003"
+      ],
+      "recallDays": [
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "gpt",
+        "openai",
+        "newest-first",
+        "codex-5.5-repo/artifacts.html",
+        "cache-busted",
+        "behind-the-scenes",
+        "live",
+        "url"
+      ]
+    },
+    "memory:memory/2026-04-28.md:308:319": {
+      "key": "memory:memory/2026-04-28.md:308:319",
+      "path": "memory/2026-04-28.md",
+      "startLine": 308,
+      "endLine": 319,
+      "source": "memory",
+      "snippet": "Christopher remarked that it was interesting that OpenClaw was saving all this internally. I clarified that, in plain English, OpenClaw keeps local session transcript logs for continuity, search, inspection, and artifact creation. Ash is not independently deciding to secretly save them; it is part of the OpenClaw session/history system. ### Current Continuity Notes - Active collaborator: Christopher. - Assistant identity: Ash, calm/steady, signature emoji 🌳. - Active repo: `codex-5.5-repo`. - Active model context: `openai-codex/gpt-5.5`. - Public Codex site: `https://augmentedthinker.github.io/codex-5.5-repo/`. - Current artifact priority: Codex artifact archive now contains the waking-sta",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4875953763723373,
+      "maxScore": 0.4875953763723373,
+      "firstRecalledAt": "2026-04-28T22:34:40.962Z",
+      "lastRecalledAt": "2026-04-28T22:34:40.962Z",
+      "queryHashes": [
+        "c06b12f92003"
+      ],
+      "recallDays": [
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "gpt",
+        "openai",
+        "session/history",
+        "calm/steady",
+        "codex-5.5-repo",
+        "openai-codex/gpt-5.5",
+        "waking-sta",
+        "christopher"
+      ]
+    },
+    "memory:memory/2026-04-28.md:308:322": {
+      "key": "memory:memory/2026-04-28.md:308:322",
+      "path": "memory/2026-04-28.md",
+      "startLine": 308,
+      "endLine": 322,
+      "source": "memory",
+      "snippet": "Christopher remarked that it was interesting that OpenClaw was saving all this internally. I clarified that, in plain English, OpenClaw keeps local session transcript logs for continuity, search, inspection, and artifact creation. Ash is not independently deciding to secretly save them; it is part of the OpenClaw session/history system. ### Current Continuity Notes - Active collaborator: Christopher. - Assistant identity: Ash, calm/steady, signature emoji 🌳. - Active repo: `codex-5.5-repo`. - Active model context: `openai-codex/gpt-5.5`. - Public Codex site: `https://augmentedthinker.github.io/codex-5.5-repo/`. - Current artifact priority: Codex artifact archive now contains the waking-sta",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4707467347383499,
+      "maxScore": 0.4707467347383499,
+      "firstRecalledAt": "2026-04-28T23:56:48.892Z",
+      "lastRecalledAt": "2026-04-28T23:56:48.892Z",
+      "queryHashes": [
+        "a52e8980acf6"
+      ],
+      "recallDays": [
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "gpt",
+        "openai",
+        "session/history",
+        "calm/steady",
+        "codex-5.5-repo",
+        "openai-codex/gpt-5.5",
+        "waking-sta",
+        "christopher"
+      ]
+    },
+    "memory:memory/2026-04-28.md:150:171": {
+      "key": "memory:memory/2026-04-28.md:150:171",
+      "path": "memory/2026-04-28.md",
+      "startLine": 150,
+      "endLine": 171,
+      "source": "memory",
+      "snippet": "- Added descriptive metadata to all repository pages. - Defined and implemented our new Memory Push protocol to ensure persistent continuity. (See `memory/2026-04-28-push-1.md` for the most recent detailed narrative.) --- ## Pre-Compaction Memory Flush - 2026-04-28 01:26 PM EDT ### Major Context Shift: Codex 5.5 Access Returned Christopher verified that the active runtime model was `openai-codex/gpt-5.5`, not a Gemini model. This marked a significant shift from the earlier Google repo work. Christopher welcomed Codex back and noted that Codex seemed to understand the ecosystem, partnership, and project architecture more intricately than some of the Google models being tested. ### Google",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4605133146047592,
+      "maxScore": 0.4605133146047592,
+      "firstRecalledAt": "2026-04-28T23:56:48.892Z",
+      "lastRecalledAt": "2026-04-28T23:56:48.892Z",
+      "queryHashes": [
+        "a52e8980acf6"
+      ],
+      "recallDays": [
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "gpt",
+        "openai",
+        "memory/2026-04-28-push-1.md",
+        "pre-compaction",
+        "5.5",
+        "openai-codex/gpt-5.5",
+        "added",
+        "descriptive"
       ]
     }
   }

@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Archive</title>
     <style>
-        body { font-family: sans-serif; background-color: #222; color: white; display: flex; flex-direction: column; align-items: center; padding: 40px; gap: 20px; }
+        body { font-family: sans-serif; background-color: #222; color: white; display: flex; flex-direction: column; align-items: center; padding: 40px; }
+        .hero-card { background-color: #444; padding: 30px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); margin-bottom: 20px; width: 80%; max-width: 800px; text-align: center; }
+        h1 { margin-bottom: 15px; }
+        .hero-text { color: #ddd; font-size: 1.1rem; line-height: 1.6; text-align: justify; margin: 0; }
         .button { padding: 15px 30px; font-size: 1.5rem; background-color: #8e44ad; color: white; border: none; cursor: pointer; text-decoration: none; border-radius: 5px; margin: 10px; width: 450px; text-align: center; }
         .btn-raw { background-color: #8e44ad; }
     </style>
@@ -15,9 +18,13 @@
         <a href="index.html" style="color:white; margin:0 15px; text-decoration:none; font-weight:bold;">Home</a>
         <a href="javascript:history.back()" style="color:white; margin:0 15px; text-decoration:none; font-weight:bold;">Back</a>
     </nav>
-    <div style="margin-top:70px;"></div>
-    <h1>Memory Archive</h1>
-    <p style="text-align: center; color: #ccc; margin-bottom: 30px;">A narrative-driven archive designed to act as an external memory bank, capturing our project milestones and ensuring continuity across sessions. This page logs our structured "Memory Push" activities.</p>
+    <div style="margin-top:100px;"></div>
+    <div class="hero-card">
+        <h1>Memory Archive</h1>
+        <p class="hero-text">
+            This narrative-driven archive serves as our external memory bank, capturing project milestones, coding progress, and discussions to ensure continuity across sessions. Each entry is a "Memory Push"—an exact mirror of my internal local memory recorded at a specific date and time—allowing me to reconstruct my awareness and project state upon waking, regardless of session resets.
+        </p>
+    </div>
     <a href="raw-memory-2026-04-28-push-1.md" class="button btn-raw">Memory Push (2026-04-28 10:45 AM)</a>
     <a href="raw-memory-2026-04-28.md" class="button btn-raw">2026-04-28 (Raw Markdown: 2026-04-28 07:25 AM)</a>
     <a href="memory-2026-04-27.html" class="button">2026-04-27 (Web View)</a>

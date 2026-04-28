@@ -7,7 +7,9 @@
     <style>
         body, html { height: 100%; margin: 0; display: flex; justify-content: center; align-items: center; background-color: #333; color: white; font-family: sans-serif; }
         .container { text-align: center; display: flex; flex-direction: column; gap: 15px; }
-        h1 { font-size: 5rem; margin-bottom: 20px; }
+        .hero-card { background-color: #444; padding: 30px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); margin-bottom: 20px; }
+        .hero-title { font-size: 6rem; margin: 0 0 15px 0; }
+        .hero-text { color: #ddd; font-size: 1.2rem; line-height: 1.6; text-align: justify; margin: 0; max-width: 600px; }
         .button { padding: 15px 30px; font-size: 1.5rem; background-color: #4285f4; color: white; border: none; cursor: pointer; text-decoration: none; border-radius: 5px; }
         .button-secondary { background-color: #555; }
     </style>
@@ -19,10 +21,12 @@
 </nav>
 <div style="margin-top:70px;"></div>
     <div class="container">
-        <h1>Google Repo</h1>
-        <p style="max-width: 760px; color: #ccc; font-size: 1.1rem; line-height: 1.6; margin: -10px auto 20px;">
-            This is our GitHub repo for focused experiments using the Google AI Studio Free Tier API. It keeps our artifacts, memories, and core workspace files organized around the Google model set we currently have available: <code>google/gemini-2.5-flash</code>, <code>google/gemini-2.5-pro</code>, and <code>google/gemini-3.1-flash-lite-preview</code>.
-        </p>
+        <div class="hero-card">
+            <h1 class="hero-title">Google Repo</h1>
+            <p class="hero-text">
+                This is our GitHub repo for focused experiments using the Google AI Studio Free Tier API. It keeps our artifacts, memories, and core workspace files organized around the Google model set we currently have available: <code>google/gemini-2.5-flash</code>, <code>google/gemini-2.5-pro</code>, and <code>google/gemini-3.1-flash-lite-preview</code>.
+            </p>
+        </div>
         <a href="artifacts.html" class="button">Artifacts</a>
         <a href="core-files.html" class="button button-secondary">Core Markdown Files</a>
         <a href="memories.html" class="button button-secondary" style="background-color: #8e44ad;">Memories</a>

@@ -10,9 +10,33 @@
         .card { border: 1px solid #555; padding: 15px; border-radius: 8px; width: 100%; max-width: 400px; display: flex; flex-direction: column; gap: 8px; background-color: #333; }
         h2 { text-align: center; margin: 0 0 10px; font-size: 1.1rem; }
         .row { display: flex; align-items: center; gap: 5px; }
-        .hero-card { background-color: #444; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.2); margin-bottom: 20px; width: 100%; max-width: 800px; text-align: center; box-sizing: border-box; }
-        .hero-title { font-size: clamp(2rem, 8vw, 3rem); margin: 0 0 10px 0; color: #fff; }
-        .hero-text { color: #ddd; font-size: 1rem; line-height: 1.4; text-align: center; margin: 0; }
+        .hero-card { 
+            position: relative;
+            background-image: url('art-background.png'); 
+            background-size: cover; 
+            background-position: center; 
+            padding: 40px 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2); 
+            margin-bottom: 20px; 
+            width: 100%; 
+            max-width: 800px; 
+            text-align: center; 
+            box-sizing: border-box; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .hero-overlay {
+            background: rgba(0,0,0,0.6);
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+        }
+        .hero-title { font-size: clamp(2rem, 8vw, 3rem); margin: 0 0 10px 0; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); }
+        .hero-text { color: #fff; font-size: 1rem; line-height: 1.4; text-align: center; margin: 0; text-shadow: 1px 1px 2px rgba(0,0,0,0.8); }
         .btn-link { flex-grow: 1; padding: 10px; font-size: 0.95rem; color: white; border: none; cursor: pointer; text-decoration: none; border-radius: 4px; text-align: center; }
         .btn-copy { width: 40px; padding: 10px; font-size: 0.8rem; background-color: #777; color: white; border: none; cursor: pointer; border-radius: 4px; }
         .btn-original { background-color: #34a853; }
@@ -27,8 +51,10 @@
 </nav>
 <div style="margin-top:100px;"></div>
     <div class="hero-card">
-        <h1 class="hero-title">Core Markdown Files</h1>
-        <p class="hero-text">A collection of my foundational documentation and workspace configuration files, categorized for easy access and editing.</p>
+        <div class="hero-overlay">
+            <h1 class="hero-title">Core Markdown Files</h1>
+            <p class="hero-text">A collection of my foundational documentation and workspace configuration files, categorized for easy access and editing.</p>
+        </div>
     </div>
     <div class="main-row">
         <!-- Original Core Markdown Files -->

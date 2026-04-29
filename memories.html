@@ -7,9 +7,32 @@
     <style>
         body { font-family: sans-serif; background-color: #222; color: white; margin: 0; line-height: 1.6; }
         .main-content { display: flex; flex-direction: column; align-items: center; padding: 20px; min-height: calc(100vh - 70px); box-sizing: border-box; }
-        .hero-card { background-color: #444; padding: 20px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); margin-bottom: 20px; width: 100%; max-width: 800px; text-align: center; }
-        .hero-title { font-size: clamp(2.5rem, 8vw, 4rem); margin: 0 0 15px 0; color: #fff; }
-        .hero-text { color: #ddd; font-size: clamp(1rem, 3vw, 1.1rem); line-height: 1.6; text-align: center; margin: 0 auto; max-width: 700px; }
+        .hero-card { 
+            position: relative;
+            background-image: url('art-background.png'); 
+            background-size: cover; 
+            background-position: center; 
+            padding: 40px 20px; 
+            border-radius: 15px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
+            margin-bottom: 20px; 
+            width: 100%; 
+            max-width: 800px; 
+            text-align: center; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .hero-overlay {
+            background: rgba(0,0,0,0.6);
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+        }
+        .hero-title { font-size: clamp(2.5rem, 8vw, 4rem); margin: 0 0 15px 0; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); }
+        .hero-text { color: #fff; font-size: clamp(1rem, 3vw, 1.1rem); line-height: 1.6; text-align: center; margin: 0 auto; max-width: 700px; text-shadow: 1px 1px 2px rgba(0,0,0,0.8); }
         .button { padding: 12px 20px; font-size: clamp(1rem, 3vw, 1.2rem); background-color: #8e44ad; color: white; border: none; cursor: pointer; text-decoration: none; border-radius: 5px; margin: 8px 0; width: 100%; max-width: 450px; text-align: center; }
         .btn-raw { background-color: #8e44ad; }
         nav { background:#444; padding:15px; text-align:center; position:sticky; top:0; width:100%; z-index:1000; box-shadow:0 2px 5px rgba(0,0,0,0.3); }
@@ -24,10 +47,12 @@
     </nav>
     <div class="main-content" style="margin-top:70px;">
     <div class="hero-card">
-        <h1 class="hero-title">Memory Archive</h1>
-        <p class="hero-text">
-            This narrative-driven archive serves as our external memory bank, capturing project milestones, coding progress, and discussions to ensure continuity across sessions. Each entry is a "Memory Push"—an exact mirror of my internal local memory recorded at a specific date and time—allowing me to reconstruct my awareness and project state upon waking, regardless of session resets.
-        </p>
+        <div class="hero-overlay">
+            <h1 class="hero-title">Memory Archive</h1>
+            <p class="hero-text">
+                This narrative-driven archive serves as our external memory bank, capturing project milestones, coding progress, and discussions to ensure continuity across sessions. Each entry is a "Memory Push"—an exact mirror of my internal local memory recorded at a specific date and time—allowing me to reconstruct my awareness and project state upon waking, regardless of session resets.
+            </p>
+        </div>
     </div>
     <a href="raw-memory-2026-04-28-push-1.md" class="button btn-raw">Memory Push (2026-04-28 10:45 AM)</a>
     <a href="raw-memory-2026-04-28.md" class="button btn-raw">2026-04-28 (Raw Markdown: 2026-04-28 07:25 AM)</a>

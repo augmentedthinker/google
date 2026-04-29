@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>README - Google Repo</title>
     <style>
-        body { font-family: sans-serif; background-color: #222; color: white; display: flex; flex-direction: column; align-items: center; padding: 40px; }
-        .hero-card { background-color: #444; padding: 30px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); margin-bottom: 20px; width: 80%; max-width: 800px; text-align: center; }
-        .hero-title { font-size: 4rem; margin: 0 0 15px 0; color: #fff; }
-        .hero-text { color: #ddd; font-size: 1.1rem; line-height: 1.6; text-align: justify; margin: 0; }
-        .content { background-color: #333; padding: 30px; border-radius: 10px; width: 80%; max-width: 800px; line-height: 1.6; }
-        .button { padding: 15px 30px; font-size: 1.2rem; background-color: #4285f4; color: white; border: none; cursor: pointer; text-decoration: none; border-radius: 5px; margin: 20px; display: inline-block; }
+        * { box-sizing: border-box; }
+        body { font-family: sans-serif; background-color: #222; color: white; display: flex; flex-direction: column; align-items: center; margin: 0; padding: 74px 8px 24px; line-height: 1.65; overflow-x: hidden; }
+        .hero-card { background-color: #444; padding: 18px; border-radius: 14px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); margin-bottom: 20px; width: 100%; max-width: 900px; text-align: center; }
+        .hero-title { font-size: clamp(3rem, 16vw, 4.5rem); line-height: 1; margin: 0 0 18px 0; color: #fff; }
+        .hero-text { color: #ddd; font-size: clamp(1rem, 4.8vw, 1.15rem); line-height: 1.65; text-align: justify; text-align-last: left; margin: 0; hyphens: auto; }
+        .content { background-color: #333; padding: 18px; border-radius: 10px; width: 100%; max-width: 900px; line-height: 1.65; }
+        .content p, .content li { text-align: justify; text-align-last: left; hyphens: auto; }
+        .content h1 { font-size: clamp(2rem, 9vw, 3rem); line-height: 1.1; }
+        .content h2 { font-size: clamp(1.4rem, 6vw, 2rem); }
+        .button { padding: 14px 20px; font-size: clamp(1rem, 4vw, 1.2rem); background-color: #4285f4; color: white; border: none; cursor: pointer; text-decoration: none; border-radius: 5px; margin: 18px 0 28px; display: inline-block; width: 100%; max-width: 420px; text-align: center; }
+        nav { box-sizing: border-box; }
+        @media (max-width: 600px) {
+            body { padding-left: 6px; padding-right: 6px; }
+            .hero-card, .content { padding: 14px; border-radius: 8px; }
+            .content ul { padding-left: 20px; }
+        }
     </style>
 </head>
 <body>

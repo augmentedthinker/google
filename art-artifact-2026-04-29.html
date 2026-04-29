@@ -15,6 +15,21 @@
         <p>Date: 2026-04-29</p>
         <p>Time: 10:15 AM EDT</p>
         <p>Model ID: google/gemini-2.5-pro</p>
+
+        <div style="text-align: left; background: rgba(0,0,0,0.3); padding: 15px; border-radius: 5px; margin: 20px 0; font-size: 0.9rem;">
+            <h2>Reference Guide: How this was made</h2>
+            <p><strong>Tool:</strong> <code>image_generate</code></p>
+            <p><strong>Prompt:</strong> "A serene, abstract digital art piece in shades of deep blue, charcoal, and subtle gold accents, minimalist style, suitable as a website background, high resolution, wide aspect ratio."</p>
+            <p><strong>Orchestrator Model:</strong> <code>google/gemini-2.5-pro</code></p>
+            <p><strong>Process Steps:</strong></p>
+            <ol>
+                <li>Call <code>image_generate</code> with the specific prompt to produce <code>art-background.png</code>.</li>
+                <li>Write the HTML wrapper file (this file) setting <code>art-background.png</code> as the <code>background-image</code> in CSS with <code>background-size: cover</code> for responsiveness.</li>
+                <li>Update <code>artifacts.html</code> to include the new button linking to this page.</li>
+                <li>Verify file placement, add to git tracking, commit, and push to GitHub.</li>
+            </ol>
+        </div>
+
         <a href="artifacts.html" style="color: #4285f4; font-weight: bold; text-decoration: none;">Back to Archive</a>
     </div>
 </body>

@@ -6,10 +6,16 @@
     <title>Particle Animation</title>
     <style>
         body { margin: 0; background: #000; overflow: hidden; }
+        nav { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background: rgba(68,68,68,0.9); padding: 15px; display: flex; justify-content: center; gap: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.3); box-sizing: border-box; }
+        nav a { color: white; text-decoration: none; font-family: sans-serif; font-weight: bold; }
         canvas { display: block; }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="artifacts.html">Artifacts</a>
+    </nav>
     <canvas id="canvas"></canvas>
     <script>
         const canvas = document.getElementById('canvas');

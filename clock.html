@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Clock</title>
-    <style>
-        body { margin: 0; display: flex; align-items: center; justify-content: center; height: 100vh; font-family: sans-serif; transition: background 0.5s; }
-        h1 { font-size: 3rem; color: #fff; text-shadow: 1px 1px 2px #000; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="clock-page">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="artifacts.html">Artifacts</a>
+    </nav>
     <h1 id="clock">00:00:00</h1>
     <script>
         function update() {

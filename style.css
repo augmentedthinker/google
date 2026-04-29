@@ -74,14 +74,27 @@ nav a {
 }
 
 .button-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
-    width: 100%;
+    width: 90%;
     max-width: 650px;
-    margin: 10px 0;
+    margin: 10px auto;
 }
 
-.button-secondary { background-color: #555; flex: 1 1 45%; }
+.button { 
+    padding: 12px 15px; 
+    font-size: 1rem; 
+    background-color: #4285f4; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    width: 100%; 
+    text-align: center; 
+    box-sizing: border-box; 
+}
+
+.button-secondary { background-color: #555; }
 

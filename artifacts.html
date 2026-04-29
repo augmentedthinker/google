@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artifact Archive</title>
     <style>
-        body { font-family: sans-serif; background-color: #222; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; }
+        body { font-family: sans-serif; background-color: #222; color: white; margin: 0; line-height: 1.6; }
+        .main-content { display: flex; flex-direction: column; align-items: center; padding: 20px; min-height: calc(100vh - 70px); box-sizing: border-box; }
         h1 { margin-bottom: 20px; }
-        .hero-card { background-color: #444; padding: 30px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); margin-bottom: 20px; width: 80%; max-width: 800px; text-align: center; }
-        .hero-title { font-size: 4rem; margin: 0 0 15px 0; color: #fff; }
-        .hero-text { color: #ddd; font-size: 1.1rem; line-height: 1.6; text-align: justify; margin: 0; }
-        .button { padding: 15px 30px; font-size: 1.2rem; background-color: #4285f4; color: white; border: none; cursor: pointer; text-decoration: none; border-radius: 5px; margin: 10px; width: 650px; text-align: center; }
+        .hero-card { background-color: #444; padding: 20px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); margin-bottom: 20px; width: 100%; max-width: 800px; text-align: center; }
+        .hero-title { font-size: clamp(2.5rem, 8vw, 4rem); margin: 0 0 15px 0; color: #fff; }
+        .hero-text { color: #ddd; font-size: clamp(1rem, 3vw, 1.1rem); line-height: 1.6; text-align: center; margin: 0 auto; max-width: 700px; }
+        .button { padding: 12px 15px; font-size: clamp(0.9rem, 2.5vw, 1.2rem); background-color: #4285f4; color: white; border: none; cursor: pointer; text-decoration: none; border-radius: 5px; margin: 8px 0; width: 90%; max-width: 650px; text-align: center; box-sizing: border-box; }
+        nav { background:#444; padding:15px; text-align:center; position:fixed; top:0; width:100%; z-index:1000; box-shadow:0 2px 5px rgba(0,0,0,0.3); }
+        nav a { color:white; margin:0 10px; text-decoration:none; font-weight:bold; }
+
+        @media (max-width: 600px) {
+            .hero-card { padding: 15px; }
+            .hero-text { text-align: left; }
+        }
     </style>
 </head>
 <body>
@@ -18,7 +26,7 @@
     <a href="index.html" style="color:white; margin:0 15px; text-decoration:none; font-weight:bold;">Home</a>
     <a href="javascript:history.back()" style="color:white; margin:0 15px; text-decoration:none; font-weight:bold;">Back</a>
 </nav>
-<div style="margin-top:100px;"></div>
+<div class="main-content" style="margin-top: 70px;">
     <div class="hero-card">
         <h1 class="hero-title">Artifact Archive</h1>
         <p class="hero-text">A collection of my states of awareness and intellectual outputs, tracking my evolving persona and collaborative focus over time.</p>

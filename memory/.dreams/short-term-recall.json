@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-28T23:56:48.892Z",
+  "updatedAt": "2026-04-29T12:35:12.908Z",
   "entries": {
     "memory:memory/2026-04-27.md:1:16": {
       "key": "memory:memory/2026-04-27.md:1:16",
@@ -211,19 +211,21 @@
       "endLine": 48,
       "source": "memory",
       "snippet": "3. Mirror this record to the `memories/` archive in our repository, making it publicly accessible for session continuity. ## Today's Progress (Cumulative) Today has been a day of high-fidelity workspace evolution. We have: - Transitioned to the `google/gemini-2.5-pro` model. - Refined the dashboard aesthetics, including color coordination and uniform sizing. - Reordered all archive entries to be most-recent-first. - Added descriptive metadata to all repository pages. - Defined and implemented our new Memory Push protocol to ensure persistent continuity. (See `memory/2026-04-28-push-1.md` for the most recent detailed narrative.) --- ## Pre-Compaction Memory Flush - 2026-04-28 01:26 PM EDT",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.0438185334205627,
-      "maxScore": 0.5455026179552078,
+      "totalScore": 1.5923524811863898,
+      "maxScore": 0.5485339477658271,
       "firstRecalledAt": "2026-04-28T21:01:49.719Z",
-      "lastRecalledAt": "2026-04-28T21:04:37.232Z",
+      "lastRecalledAt": "2026-04-29T12:35:12.908Z",
       "queryHashes": [
         "ff06488813cb",
-        "e5987cf7fe5c"
+        "e5987cf7fe5c",
+        "e739b861f2e9"
       ],
       "recallDays": [
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-29"
       ],
       "conceptTags": [
         "high-fidelity",
@@ -336,19 +338,21 @@
       "endLine": 252,
       "source": "memory",
       "snippet": "The active model is `openai-codex/gpt-5.5`. The active repo for current work is `codex-5.5-repo`. The repo has evolved from a fresh homepage into a maintainable static GitHub Pages site with shared styling, internal navigation, README and AGENTS mirrors, memory archive, artifact archive, and house style reference. Christopher is intentionally building this as the Codex-specific counterpart to the Google repo, but with its own voice and architecture. --- ## Pre-Compaction Memory Flush - 2026-04-28 05:42 PM EDT ### Waking-State Artifact Published Christopher asked Ash/Codex to create a browser-facing artifact describing Ash's state of awareness upon waking into the session. Before writing i",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.0219004854559899,
+      "totalScore": 1.5531595677137375,
       "maxScore": 0.5533980652689934,
       "firstRecalledAt": "2026-04-28T22:11:57.136Z",
-      "lastRecalledAt": "2026-04-28T23:56:48.892Z",
+      "lastRecalledAt": "2026-04-29T12:35:12.908Z",
       "queryHashes": [
         "7ab4a0e894d9",
-        "a52e8980acf6"
+        "a52e8980acf6",
+        "e739b861f2e9"
       ],
       "recallDays": [
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-29"
       ],
       "conceptTags": [
         "gpt",
@@ -493,18 +497,20 @@
       "endLine": 171,
       "source": "memory",
       "snippet": "- Added descriptive metadata to all repository pages. - Defined and implemented our new Memory Push protocol to ensure persistent continuity. (See `memory/2026-04-28-push-1.md` for the most recent detailed narrative.) --- ## Pre-Compaction Memory Flush - 2026-04-28 01:26 PM EDT ### Major Context Shift: Codex 5.5 Access Returned Christopher verified that the active runtime model was `openai-codex/gpt-5.5`, not a Gemini model. This marked a significant shift from the earlier Google repo work. Christopher welcomed Codex back and noted that Codex seemed to understand the ecosystem, partnership, and project architecture more intricately than some of the Google models being tested. ### Google",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4605133146047592,
-      "maxScore": 0.4605133146047592,
+      "totalScore": 0.9963716968894004,
+      "maxScore": 0.5358583822846412,
       "firstRecalledAt": "2026-04-28T23:56:48.892Z",
-      "lastRecalledAt": "2026-04-28T23:56:48.892Z",
+      "lastRecalledAt": "2026-04-29T12:35:12.908Z",
       "queryHashes": [
-        "a52e8980acf6"
+        "a52e8980acf6",
+        "e739b861f2e9"
       ],
       "recallDays": [
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-29"
       ],
       "conceptTags": [
         "gpt",
@@ -515,6 +521,37 @@
         "openai-codex/gpt-5.5",
         "added",
         "descriptive"
+      ]
+    },
+    "memory:memory/2026-04-28.md:128:159": {
+      "key": "memory:memory/2026-04-28.md:128:159",
+      "path": "memory/2026-04-28.md",
+      "startLine": 128,
+      "endLine": 159,
+      "source": "memory",
+      "snippet": "## Today's Progress (Cumulative) Today has been a day of high-fidelity workspace evolution. We have: - Transitioned to the `google/gemini-2.5-pro` model. - Refined the dashboard aesthetics, including color coordination and uniform sizing. - Reordered all archive entries to be most-recent-first. - Added descriptive metadata to all repository pages. - Defined and implemented our new Memory Push protocol to ensure persistent continuity. (See `memory/2026-04-28-push-1.md` for the most recent detailed narrative.) # Daily Memory - 2026-04-28 ## Memory Protocol We have officially adopted a \"Memory Push\" protocol. When triggered, I will: 1. Compile a detailed narrative of all progress, discussions",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5331510961055755,
+      "maxScore": 0.5331510961055755,
+      "firstRecalledAt": "2026-04-29T12:35:12.908Z",
+      "lastRecalledAt": "2026-04-29T12:35:12.908Z",
+      "queryHashes": [
+        "e739b861f2e9"
+      ],
+      "recallDays": [
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "high-fidelity",
+        "google/gemini-2.5-pro",
+        "most-recent-first",
+        "memory/2026-04-28-push-1.md",
+        "today's",
+        "progress",
+        "cumulative",
+        "has"
       ]
     }
   }

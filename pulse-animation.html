@@ -34,6 +34,26 @@
         <h2>Digital Pulse</h2>
         <p>A visualization of the heartbeat within the machine. This animation represents the constant, rhythmic flow of data and energy that defines our collaborative workspace.</p>
     </div>
+
+    <div class="hero-card" style="text-align: left;">
+        <h2>Technical Notes</h2>
+        <p>This artifact is a native browser animation built with a single HTML canvas element and plain JavaScript. No image file, video file, animation library, external framework, or AI image generation model is being used here. The visual is rendered live by the browser every frame.</p>
+
+        <h3>Canvas Format</h3>
+        <p>The canvas is set to an internal drawing size of <code>400 x 600</code>, which creates a tall portrait shape similar to the assistant image card. The CSS then scales the canvas to the available card width while preserving the portrait aspect ratio, making it comfortable for phone viewing.</p>
+
+        <h3>Particle System</h3>
+        <p>The animation starts by creating an array of 50 particle objects. Each particle has a randomized horizontal position, vertical position, dot size, and upward speed. These randomized values keep the motion organic instead of perfectly uniform.</p>
+
+        <h3>Motion Loop</h3>
+        <p>The <code>draw()</code> function runs continuously using <code>requestAnimationFrame()</code>, which asks the browser to repaint the scene efficiently at the display's natural refresh rate. On each frame, every particle is redrawn as a small blue circle, then moved slightly upward.</p>
+
+        <h3>Trail Effect</h3>
+        <p>Instead of clearing the canvas completely on every frame, the script paints a semi-transparent black rectangle over the previous frame using <code>rgba(0,0,0,0.1)</code>. That small amount of opacity gradually fades older positions and creates the soft glowing trail effect behind the moving particles.</p>
+
+        <h3>Looping Behavior</h3>
+        <p>When a particle travels above the top edge of the canvas, it is reset to the bottom. This creates a continuous vertical current, like data rising through a dark interface or sparks moving through the nervous system of the page.</p>
+    </div>
     <script>
         const canvas = document.getElementById('pulseCanvas');
         const ctx = canvas.getContext('2d');

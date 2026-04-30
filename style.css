@@ -57,6 +57,11 @@ nav a {
     text-align: center;
 }
 
+/* Force paragraph justification even inside page-hero if specifically desired */
+.page-hero p {
+    text-align: justify;
+}
+
 h1 { margin: 0 0 10px; font-size: 2rem; color: #000; }
 p { color: #555; margin: 0; text-align: justify; }
 

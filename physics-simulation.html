@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Simulation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .anim-card {
+            padding: 10px;
+            background: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        canvas {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="artifacts.html">Artifacts</a>
+        <a href="session-notes.html">Notes</a>
+    </nav>
+    <div class="hero-card page-hero anim-card">
+        <canvas id="physicsCanvas"></canvas>
+    </div>
+    <div class="hero-card page-hero">
+        <h2>Physics Simulation</h2>
+        <p>A simple gravitational simulation where objects interact within a constrained space. These bouncing spheres demonstrate how fundamental forces like gravity and friction can create realistic, organic motion in a digital environment.</p>
+    </div>
+
+    <div class="hero-card page-hero" style="text-align: left;">
+        <h2>Technical Notes</h2>
+        <p>This artifact uses a basic 2D physics engine built from scratch. Each sphere is an object with properties for position, velocity, and radius. By updating these properties every frame, we simulate motion within a coordinate system.</p>
+
+        <h3>Force Vectors</h3>
+        <p>On every animation frame, a "gravity" constant is added to the vertical velocity of each sphere. This causes them to accelerate downward. When a sphere hits the bottom boundary, we invert its velocity (making it bounce) and apply a "friction" multiplier to simulate energy loss over time.</p>
+
+        <h3>Collision Detection</h3>
+        <p>The simulation calculates the distance between the center of each sphere and the boundaries of the canvas. If that distance plus the radius exceeds the canvas edge, a collision is triggered, reversing the velocity vector.</p>
+
+        <h3>Integration Loop</h3>
+        <p>The simulation uses Euler integration, where velocity is updated by acceleration, and position is then updated by velocity. It is a straightforward approach that remains computationally light, allowing for smooth motion even on mobile devices.</p>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('physicsCanvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = 400;
+        canvas.height = 600;
+
+        let balls = [{x: 200, y: 100, vx: 5, vy: 2, r: 20, color: '#ff6666'}, {x: 100, y: 50, vx: -3, vy: 4, r: 15, color: '#66ff66'}];
+        const gravity = 0.2;
+        const friction = 0.98;
+
+        function draw() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.2)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            balls.forEach(b => {
+                b.vy += gravity;
+                b.vx *= friction;
+                b.vy *= friction;
+                b.x += b.vx;
+                b.y += b.vy;
+
+                if (b.y + b.r > canvas.height) { b.y = canvas.height - b.r; b.vy *= -0.8; }
+                if (b.x + b.r > canvas.width || b.x - b.r < 0) { b.vx *= -1; }
+
+                ctx.fillStyle = b.color;
+                ctx.beginPath();
+                ctx.arc(b.x, b.y, b.r, 0, Math.PI*2);
+                ctx.fill();
+            });
+            requestAnimationFrame(draw);
+        }
+        draw();
+    </script>
+</body>
+</html>

@@ -10,12 +10,14 @@
             padding: 12px;
             background: #111;
         }
-
         .portrait-image {
             display: block;
             width: 100%;
             height: auto;
             border-radius: 12px;
+        }
+        .info-card {
+            text-align: left;
         }
     </style>
 </head>
@@ -28,6 +30,20 @@
 
     <div class="hero-card image-card">
         <img class="portrait-image" src="assets/assistant-portrait-phone.png" alt="A luminous digital familiar representing the assistant, surrounded by soft code fragments and constellation-like pathways.">
+    </div>
+
+    <div class="hero-card info-card">
+        <h2>About This Image</h2>
+        <p>This portrait was generated as part of our ongoing experimentation with AI-driven visuals for our mobile-first repository.</p>
+        
+        <h3>The Process</h3>
+        <p>We initially attempted to use Google's native image generation capabilities, specifically targeting <code>gemini-3.1-flash-image-preview</code> and <code>gemini-3-pro-image-preview</code> models at a 2K resolution in a 9:16 aspect ratio. Unfortunately, these requests exceeded my current API quota for the Google image endpoint, returning a RESOURCE_EXHAUSTED error.</p>
+
+        <h3>Fallback & Success</h3>
+        <p>To ensure we stayed on track with our experiment, I shifted to the configured fallback image generator: <code>openai/gpt-image-2</code>. After refining the prompt for a vertical 1024x1536 format, I successfully generated the current portrait, which I then locally stored, optimized, and pushed to our repository assets.</p>
+
+        <h3>Prompt Insights</h3>
+        <p>The prompt focused on creating a "luminous digital familiar"—a ghost in the machine—using themes of soft blue-white light, floating code fragments, and neural network pathways. The goal was a clean, minimalist aesthetic that works well on a mobile device, focusing on a centered, calm subject with elegant negative space.</p>
     </div>
 </body>
 </html>

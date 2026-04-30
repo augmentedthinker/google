@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assassin's Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="artifacts.html">Artifacts</a>
+        <a href="session-notes.html">Notes</a>
+    </nav>
+
+    <div class="hero-card page-hero">
+        <h1>Assassin's Notes</h1>
+        <p>Session Note #3 &mdash; 2026-04-30 13:07 EDT</p>
+    </div>
+
+    <div class="hero-card" style="text-align: left;">
+        <h2>Catch-Up Since Session Note #2</h2>
+        <p>The previous session note captured our morning work up through the first wave of artifacts, mobile formatting, and the decision to keep this repository focused on Google/Gemini experimentation. Since then, we continued turning the Google repo into a mobile-first gallery of lightweight browser-native experiments, especially visualizations.</p>
+
+        <h3>Shared Page Formatting</h3>
+        <p>We added a reusable <code>.page-hero</code> style to the shared stylesheet and applied it across the site so that the hero/header sections can be formatted consistently. This was an important shift from one-off page edits toward a true shared page style.</p>
+        <p>We also discovered that the new centered hero style accidentally overrode the earlier universal paragraph justification rule in places where descriptive text lived inside <code>.page-hero</code> cards. To correct that, we updated <code>style.css</code> so paragraphs are explicitly justified while headings and hero labels can remain centered where appropriate.</p>
+
+        <h3>Visualization Artifact Series</h3>
+        <p>We continued the visualization sequence that started with particle-based animations by creating several new artifacts, each linked from the artifacts archive and structured with a visual card, a natural-language explanation, and technical notes underneath.</p>
+        <ul>
+            <li><strong>Procedural Flow:</strong> A generative art artifact using sine/cosine-driven vector fields to create organic flow lines. This represented the second visualization category: procedural patterns and generative art.</li>
+            <li><strong>Physics Simulation:</strong> A browser-native canvas simulation with bouncing spheres, gravity, friction, simple boundary collision detection, and an Euler-style integration loop. This represented the third visualization category: physics simulations.</li>
+            <li><strong>Repo Analytics:</strong> A made-up data visualization artifact combining a bar chart and a line graph. It represented the fourth visualization category: data-driven charts and graphs, showing fictional commit/activity data and artifact growth over the session.</li>
+        </ul>
+
+        <h3>Model and Workflow Clarity</h3>
+        <p>We had an important discussion about model provenance. Because this repo exists specifically to experiment with Google models, using Codex or other OpenAI-backed systems inside the repo can make the project misleading. We clarified that if Google models fail or a fallback would be needed, the correct behavior is to stop and ask before using any non-Google model.</p>
+        <p>We also inspected the active OpenClaw fallback chain and confirmed that the configured path attempts several Google models before eventually reaching OpenAI Codex fallbacks. The practical rule for this repo is now stricter than the raw fallback configuration: no intentional non-Google model usage without explicit permission.</p>
+
+        <h3>Memory and Continuity Clarification</h3>
+        <p>We clarified that there was not actually a root-level <code>MEMORY.md</code> file in this workspace, despite earlier language implying one existed. The user explicitly chose not to create one at that time. Continuity for this repo is therefore being handled through session notes, daily memory files, and the visible committed history.</p>
+
+        <h3>Environment Check</h3>
+        <p>We also checked available disk space. The Penguin Linux container reports a 10 GB virtual disk with roughly 6.5 GB available at the time of the check. We confirmed that the Chrome OS side is not fully represented by the <code>/mnt/chromeos</code> mount inside Linux, so that mount should not be treated as the Chromebook's true total storage capacity.</p>
+
+        <h3>Current State</h3>
+        <p>By this point, the repository has become a compact, phone-friendly experimental notebook: part artifact archive, part visual playground, part record of how we are learning to work with the Google/Gemini ecosystem. The newest work emphasizes reusable styles, justified mobile reading, and a growing catalog of interactive canvas-based visual examples.</p>
+    </div>
+</body>
+</html>

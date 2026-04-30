@@ -50,6 +50,13 @@ nav a {
     text-align: center;
 }
 
+.page-hero,
+.page-hero p,
+.page-hero ul,
+.page-hero li {
+    text-align: center;
+}
+
 h1 { margin: 0 0 10px; font-size: 2rem; color: #000; }
 p { color: #555; margin: 0; text-align: justify; }
 

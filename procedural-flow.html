@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedural Flow</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .anim-card {
+            padding: 10px;
+            background: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        canvas {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="artifacts.html">Artifacts</a>
+        <a href="session-notes.html">Notes</a>
+    </nav>
+    <div class="hero-card page-hero anim-card">
+        <canvas id="flowCanvas"></canvas>
+    </div>
+    <div class="hero-card page-hero">
+        <h2>Procedural Flow</h2>
+        <p>A generative art exploration that creates fluid, mathematical landscapes. This visualization maps coordinate space to organic, swirling patterns that evolve in real-time.</p>
+    </div>
+
+    <div class="hero-card page-hero" style="text-align: left;">
+        <h2>Technical Notes</h2>
+        <p>This artifact uses procedural generation to create a "flow field." Instead of individual particles with independent physics, this script treats the canvas as a grid of potential vectors.</p>
+
+        <h3>Vector Field Mapping</h3>
+        <p>Every pixel on the canvas is assigned a direction based on a combination of sine and cosine waves. As time passes, the phase of these waves shifts, causing the "field" of directions to slowly rotate and warp.</p>
+
+        <h3>Trajectory Integration</h3>
+        <p>We trace the paths of several "tracers" moving through this field. They don't have their own velocity; they simply look up the direction of the field at their current position and move accordingly. This produces the smooth, organic curvature characteristic of fluid dynamics.</p>
+
+        <h3>Rendering Approach</h3>
+        <p>By drawing many small line segments over several frames rather than clearing the canvas, we reveal the hidden structure of the mathematical field, turning invisible vector math into a tangible, painterly aesthetic.</p>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('flowCanvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = 400;
+        canvas.height = 600;
+        let time = 0;
+
+        function draw() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            ctx.strokeStyle = 'rgba(102, 204, 255, 0.5)';
+            ctx.lineWidth = 1;
+
+            for (let i = 0; i < 20; i++) {
+                let x = Math.random() * canvas.width;
+                let y = Math.random() * canvas.height;
+                ctx.beginPath();
+                ctx.moveTo(x, y);
+                for (let j = 0; j < 10; j++) {
+                    let angle = Math.sin(x * 0.01 + time) + Math.cos(y * 0.01 + time);
+                    x += Math.cos(angle) * 5;
+                    y += Math.sin(angle) * 5;
+                    ctx.lineTo(x, y);
+                }
+                ctx.stroke();
+            }
+            time += 0.02;
+            requestAnimationFrame(draw);
+        }
+        draw();
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Pulse</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .anim-card {
+            padding: 10px;
+            background: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        canvas {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="artifacts.html">Artifacts</a>
+        <a href="session-notes.html">Notes</a>
+    </nav>
+    <div class="hero-card anim-card">
+        <canvas id="pulseCanvas"></canvas>
+    </div>
+    <div class="hero-card">
+        <h2>Digital Pulse</h2>
+        <p>A visualization of the heartbeat within the machine. This animation represents the constant, rhythmic flow of data and energy that defines our collaborative workspace.</p>
+    </div>
+    <script>
+        const canvas = document.getElementById('pulseCanvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = 400;
+        canvas.height = 600;
+        let particles = [];
+        for(let i=0; i<50; i++) particles.push({x: Math.random()*canvas.width, y: Math.random()*canvas.height, size: Math.random()*3+1, speed: Math.random()*2+0.5});
+        function draw() {
+            ctx.fillStyle = 'rgba(0,0,0,0.1)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = '#66ccff';
+            particles.forEach(p => {
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size, 0, Math.PI*2);
+                ctx.fill();
+                p.y -= p.speed;
+                if(p.y < 0) p.y = canvas.height;
+            });
+            requestAnimationFrame(draw);
+        }
+        draw();
+    </script>
+</body>
+</html>

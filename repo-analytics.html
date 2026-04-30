@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repo Analytics</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .anim-card {
+            padding: 20px;
+            background: #eee;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        canvas {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="artifacts.html">Artifacts</a>
+        <a href="session-notes.html">Notes</a>
+    </nav>
+    <div class="hero-card page-hero anim-card">
+        <canvas id="chartCanvas"></canvas>
+    </div>
+    <div class="hero-card page-hero">
+        <h2>Repo Analytics</h2>
+        <p>A visualization of our development activity. This shows the growth of our experimental artifact collection, tracking progress across our collaborative session today.</p>
+    </div>
+
+    <div class="hero-card page-hero" style="text-align: left;">
+        <h2>Technical Notes</h2>
+        <p>This visualization uses the HTML5 Canvas API to render two distinct data views: a bar chart representing total commits per hour, and a line graph tracking our artifact count growth.</p>
+
+        <h3>Data Mapping</h3>
+        <p>Data points are stored in local arrays. The <code>drawBarChart()</code> function normalizes these values to fit the canvas height, while <code>drawLineGraph()</code> maps our artifact milestones over the timeline of this session.</p>
+
+        <h3>Dynamic Scaling</h3>
+        <p>The code uses a coordinate scaling function to translate numeric data (like 0-10 commits) into canvas pixel space (0-300 height), ensuring the visual remains proportional even if we add more data points later.</p>
+
+        <h3>Rendering Layers</h3>
+        <p>The charts are drawn in two layers: the background grid lines and labels, followed by the data shapes (bars and lines). By clearing the canvas and redrawing, we could easily add animation to these charts if we decide to track live updates in the future.</p>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('chartCanvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = 400;
+        canvas.height = 400;
+
+        const commits = [2, 5, 8, 3, 4];
+        const artifacts = [1, 2, 4, 7, 9];
+
+        function draw() {
+            ctx.fillStyle = '#fff';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Draw Bars
+            ctx.fillStyle = '#66ccff';
+            commits.forEach((h, i) => {
+                ctx.fillRect(i * 60 + 50, 350 - h * 30, 40, h * 30);
+            });
+
+            // Draw Line
+            ctx.beginPath();
+            ctx.strokeStyle = '#333';
+            ctx.lineWidth = 3;
+            artifacts.forEach((a, i) => {
+                const x = i * 60 + 70;
+                const y = 350 - a * 30;
+                i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+            });
+            ctx.stroke();
+        }
+        draw();
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Glowing Orb</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { margin: 0; background: #000; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden; }
+        .orb {
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, #00d4ff, #003a4d, #000);
+            border-radius: 50%;
+            box-shadow: 0 0 50px #00d4ff;
+            animation: pulse 2s infinite ease-in-out;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 50px #00d4ff; }
+            50% { transform: scale(1.2); box-shadow: 0 0 100px #00d4ff; }
+        }
+    </style>
+</head>
+<body>
+    <div class="orb"></div>
+</body>
+</html>

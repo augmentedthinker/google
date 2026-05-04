@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Morning</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .sunrise-gradient {
+            height: 200px;
+            width: 100%;
+            background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+            border-radius: 10px;
+            animation: pulse 4s infinite alternate;
+        }
+        @keyframes pulse {
+            from { opacity: 0.7; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="artifacts.html">Artifacts</a>
+        <a href="session-notes.html">Notes</a>
+    </nav>
+    <div class="hero-card page-hero">
+        <h1>Good Morning</h1>
+        <p>2026-05-04 07:27 EDT</p>
+    </div>
+    <div class="hero-card">
+        <div class="sunrise-gradient"></div>
+        <p style="text-align: center; margin-top: 20px;"><em>"The morning is a blank canvas. Paint it well."</em></p>
+    </div>
+</body>
+</html>

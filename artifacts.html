@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artifacts</title>
+    <title>Artifacts | Google Repo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,24 +11,44 @@
         <a href="index.html">Home</a>
         <a href="artifacts.html">Artifacts</a>
         <a href="session-notes.html">Notes</a>
+        <a href="markdowns.html">Markdowns</a>
     </nav>
-    <div class="hero-card page-hero">
-        <h1>ARTIFACTS</h1>
-    </div>
-    <div class="button-stack">
-        <a href="glowing-orb.html" class="button">2026-05-03 12:46 EDT (Glowing Orb)</a>
-        <a href="neural-flow.html" class="button">2026-05-03 12:33 EDT (Neural Flow)</a>
-        <a href="workspace-overview.html" class="button">2026-05-03 12:15 EDT (Workspace Overview)</a>
-        <a href="repo-analytics.html" class="button">2026-04-30 11:00 EDT (Repo Analytics)</a>
-        <a href="physics-simulation.html" class="button">2026-04-30 10:15 EDT (Physics Simulation)</a>
-        <a href="procedural-flow.html" class="button">2026-04-30 09:30 EDT (Procedural Flow)</a>
-        <a href="pulse-animation.html" class="button">2026-04-30 08:15 EDT (Digital Pulse)</a>
-        <a href="assistant-portrait-artifact.html" class="button">2026-04-30 06:15 EDT (Assistant Portrait)</a>
-        <a href="gemini-image-info.html" class="button">2026-04-30 06:10 EDT (Gemini Image Info)</a>
-        <a href="morning-briefing.html" class="button">2026-04-30 05:30 EDT (Morning Briefing)</a>
-        <a href="clock.html" class="button">2026-04-29 14:10 EDT (Color Clock)</a>
-        <a href="particles.html" class="button">2026-04-29 14:05 EDT</a>
-        <a href="repo-reference.html" class="button">2026-04-29 13:45 EDT</a>
-    </div>
+
+    <main class="page-shell">
+        <section class="hero-card page-hero">
+            <p class="eyebrow">Experiment Gallery</p>
+            <h1>Artifacts</h1>
+            <p>
+                Artifacts are standalone outputs from Gemini/OpenClaw work sessions. Most are small HTML pages:
+                visual demos, interface sketches, generated summaries, or simple experiments. Add new artifacts here
+                when they are meant to be viewed directly in the browser.
+            </p>
+        </section>
+
+        <section class="info-card">
+            <h2>How to use this page</h2>
+            <ul>
+                <li>Each button should point to an existing artifact file in this repo.</li>
+                <li>Newest artifacts should generally appear near the top.</li>
+                <li>Use short labels that include the date and the artifact purpose.</li>
+                <li>If a linked file does not exist, remove the link or create the file before committing.</li>
+            </ul>
+        </section>
+
+        <section class="button-stack" aria-label="Artifact links">
+            <a href="glowing-orb.html" class="button">2026-05-03 12:46 EDT — Glowing Orb</a>
+            <a href="workspace-overview.html" class="button">2026-05-03 12:15 EDT — Workspace Overview</a>
+            <a href="repo-analytics.html" class="button">2026-04-30 11:00 EDT — Repo Analytics</a>
+            <a href="physics-simulation.html" class="button">2026-04-30 10:15 EDT — Physics Simulation</a>
+            <a href="procedural-flow.html" class="button">2026-04-30 09:30 EDT — Procedural Flow</a>
+            <a href="pulse-animation.html" class="button">2026-04-30 08:15 EDT — Digital Pulse</a>
+            <a href="assistant-portrait-artifact.html" class="button">2026-04-30 06:15 EDT — Assistant Portrait</a>
+            <a href="gemini-image-info.html" class="button">2026-04-30 06:10 EDT — Gemini Image Info</a>
+            <a href="morning-briefing.html" class="button">2026-04-30 05:30 EDT — Morning Briefing</a>
+            <a href="clock.html" class="button">2026-04-29 14:10 EDT — Color Clock</a>
+            <a href="particles.html" class="button">2026-04-29 14:05 EDT — Particles</a>
+            <a href="repo-reference.html" class="button">2026-04-29 13:45 EDT — Repo Reference Artifact</a>
+        </section>
+    </main>
 </body>
 </html>

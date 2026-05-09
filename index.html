@@ -11,22 +11,51 @@
         <a href="index.html">Home</a>
         <a href="artifacts.html">Artifacts</a>
         <a href="session-notes.html">Notes</a>
+        <a href="markdowns.html">Markdowns</a>
     </nav>
-    <div class="hero-card page-hero">
-        <h1>Google Repo</h1>
-        <p style="text-align: center;"><strong>Models:</strong></p>
-        <ul style="list-style-type: none; padding: 0; color: #555; text-align: center;">
-            <li>google/gemini-2.5-flash</li>
-            <li>google/gemini-2.5-pro</li>
-            <li>google/gemini-3.1-flash-lite-preview</li>
-        </ul>
-    </div>
-    <div class="button-stack">
-        <a href="artifacts.html" class="button">ARTIFACTS</a>
-        <a href="session-notes.html" class="button">SESSION NOTES</a>
-        <a href="#" class="button">Button 3</a>
-        <a href="#" class="button">Button 4</a>
-        <a href="#" class="button">Button 5</a>
-    </div>
+
+    <main class="page-shell">
+        <section class="hero-card page-hero">
+            <p class="eyebrow">Google / Gemini Workspace</p>
+            <h1>Google Repo</h1>
+            <p>
+                This is a deliberately simple GitHub Pages site for experiments made with Google Gemini models.
+                Treat it as a small public workspace: artifacts go in one place, session notes go in another,
+                and markdown files explain how the repo is meant to be used.
+            </p>
+        </section>
+
+        <section class="info-card">
+            <h2>What this site is for</h2>
+            <p>
+                The goal is clarity over complexity. Gemini agents using this repo should be able to quickly understand
+                what exists, where new work belongs, and how to add future experiments without needing a large framework.
+            </p>
+        </section>
+
+        <section class="info-card">
+            <h2>Current model focus</h2>
+            <ul>
+                <li><code>google/gemini-2.5-flash</code></li>
+                <li><code>google/gemini-2.5-pro</code></li>
+                <li><code>google/gemini-3.1-flash-lite-preview</code></li>
+            </ul>
+        </section>
+
+        <section class="button-stack" aria-label="Main site sections">
+            <a href="artifacts.html" class="button">
+                <span>Artifacts</span>
+                <small>Standalone HTML experiments, demos, and generated pages.</small>
+            </a>
+            <a href="session-notes.html" class="button">
+                <span>Session Notes</span>
+                <small>Short records of what happened during work sessions.</small>
+            </a>
+            <a href="markdowns.html" class="button">
+                <span>Markdowns</span>
+                <small>README, repo reference, and workspace instruction files.</small>
+            </a>
+        </section>
+    </main>
 </body>
 </html>

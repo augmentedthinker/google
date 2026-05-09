@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Session Notes</title>
+    <title>Session Notes | Google Repo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,15 +11,36 @@
         <a href="index.html">Home</a>
         <a href="artifacts.html">Artifacts</a>
         <a href="session-notes.html">Notes</a>
+        <a href="markdowns.html">Markdowns</a>
     </nav>
-    <div class="hero-card page-hero">
-        <h1>SESSION NOTES</h1>
-    </div>
-    <div class="button-stack">
-        <a href="session-note-4.html" class="button">#4 - 2026-05-03 12:20 EDT</a>
-        <a href="session-note-3.html" class="button">#3 - 2026-04-30 13:07 EDT</a>
-        <a href="session-note-2.html" class="button">#2 - 2026-04-30 08:30 EDT</a>
-        <a href="session-note-1.html" class="button">#1 - 2026-04-29 15:35 EDT</a>
-    </div>
+
+    <main class="page-shell">
+        <section class="hero-card page-hero">
+            <p class="eyebrow">Work Log</p>
+            <h1>Session Notes</h1>
+            <p>
+                Session notes are lightweight records of what happened during specific work sessions. They are not meant
+                to be perfect essays. Their job is to preserve continuity so a future Gemini/OpenClaw agent can quickly
+                understand what changed, why it changed, and what might come next.
+            </p>
+        </section>
+
+        <section class="info-card">
+            <h2>What belongs in a session note</h2>
+            <ul>
+                <li>Important decisions made during the session.</li>
+                <li>Files changed or artifacts created.</li>
+                <li>Open questions, next steps, or known issues.</li>
+                <li>Short context that helps the next agent resume without guessing.</li>
+            </ul>
+        </section>
+
+        <section class="button-stack" aria-label="Session note links">
+            <a href="session-note-4.html" class="button">#4 — 2026-05-03 12:20 EDT</a>
+            <a href="session-note-3.html" class="button">#3 — 2026-04-30 13:07 EDT</a>
+            <a href="session-note-2.html" class="button">#2 — 2026-04-30 08:30 EDT</a>
+            <a href="session-note-1.html" class="button">#1 — 2026-04-29 15:35 EDT</a>
+        </section>
+    </main>
 </body>
 </html>
